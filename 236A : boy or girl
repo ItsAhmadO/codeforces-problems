@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string s, sn;
+    cin >> s;
+    bool t = true;
+    for(int i = 0; i < s.length(); i++){
+        t = true;
+        for(char ch: sn){
+            if(ch == s[i]){
+                t = false;
+                break;
+            }
+        }
+        if(t == true){
+            sn += s[i];
+        } 
+    }
+
+    if(sn.length() % 2 == 0){
+        cout << "CHAT WITH HER!";
+    }
+    else{
+        cout << "IGNORE HIM!";
+    }
+    return 0;
+}
