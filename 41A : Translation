@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+int main() {
+    string s,t,j;
+    cin >> s >> t;
+    for(int i = s.length()-1; i >= 0; i--){
+        j += s[i];
+    }
+    if(j == t){
+        cout << "YES";
+    }
+    else{
+        cout << "NO";
+    }
+    return 0;
+}
